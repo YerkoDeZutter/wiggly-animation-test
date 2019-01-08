@@ -1,0 +1,49 @@
+@keyframes squiggly-anim {
+  0% {
+    filter: url('#squiggly-0');
+  }
+
+  25% {
+    filter: url('#squiggly-1');
+  }
+
+  50% {
+    filter: url('#squiggly-2');
+  }
+
+  75% {
+    filter: url('#squiggly-3');
+  }
+
+  100% {
+    filter: url('#squiggly-4');
+  }
+}
+
+body {
+  line-height: 100vh;
+  background: #111;
+  color: white;
+}
+
+.test {
+  animation: squiggly-anim 0.34s linear infinite;
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  outline: none;
+  text-align: center;
+  line-height: 1;
+}
+
+.small {
+  font-size: 0.5em;
+}
+
+.smaller {
+  font-size: 0.4em;
+}
+
+p {
+  margin: 0;
+}
